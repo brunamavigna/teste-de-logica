@@ -1,6 +1,9 @@
 export interface InterfaceModel {
     _id: string
     name:string
-    category: string;
+    descricion: string;
+    price: string;
+    id_estoque: string;
+
 }
 

@@ -8,7 +8,7 @@
     cursor: pointer;
   }
   .cursos{
-    padding-left: 40px;
+    padding-left: 163px;
   }
 
   a{
@@ -26,4 +26,10 @@
 
   a:active {
     text-decoration: underline;
+  }
+
+  .toolbar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
   }

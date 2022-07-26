@@ -1,1 +1,48 @@
-<p>mais vendidos works!</p>
+<br>
+
+<!-- <mat-slide-toggle>Definir alerta para novos cursos adicionados</mat-slide-toggle>-->
+
+<mat-card>
+
+    <mat-toolbar class="toolbar2">Mais Vendidos</mat-toolbar>
+          
+       
+    <table mat-table [dataSource]="arrayCompleto" class="mat-elevation-z8">
+  
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Produtos</th>
+        <td mat-cell *matCellDef="let course"> {{ course.name }} </td> 
+      </ng-container>
+    
+      <!-- Category Column -->
+
+      <ng-container matColumnDef="qtdvendas">
+        <th mat-header-cell *matHeaderCellDef> Vendidos </th>
+        <td mat-cell *matCellDef="let qtdvendas"> {{ vendas.quantidade }} </td> 
+      </ng-container>
+
+
+  
+      
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+    
+
+  
+     
+  
+  
+  </mat-card>  
+  
+  
+    
+    
+     
+  

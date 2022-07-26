@@ -11,7 +11,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table'; 
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
-
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
     RelatoriosComponent,
     
     
+    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,11 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatTableModule,
     MatCardModule,
-    MatIconModule
+    MatSlideToggleModule,
+    HttpClientModule,
+    
+    
+    
     
   ],
   providers: [],
